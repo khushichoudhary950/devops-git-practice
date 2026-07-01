@@ -1,4 +1,39 @@
-In this file we practise all git commands
+## Difference Between git fetch and git pull
+
+| git fetch | git pull 
+|------------|-----------|
+| Downloads the latest changes from the remote repository. | Downloads the latest changes and merges them into the current branch. |
+| Does not modify your working files. | Updates your working files automatically. |
+| Safe for checking new changes before merging. | Best when you want your local branch updated immediately. |
+
+### Commands
+
+```bash
+git fetch
+```
+
+Downloads new commits from GitHub but does not merge them.
+
+```bash
+git pull
+```
+
+Downloads new commits and immediately merges them into the current branch.
+
+### Relationship
+
+```text
+git pull
+      │
+      ▼
+git fetch
+      +
+git merge
+```
+
+So,
+
+git pull = git fetch + git mergeIn this file we practise all git commands
 
 git init 
 git add
